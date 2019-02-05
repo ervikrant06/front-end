@@ -17,6 +17,8 @@ install:
 
 env:
   - GROUP=quay.io/ervikrant06 COMMIT="${TRAVIS_COMMIT}" TAG="${TRAVIS_TAG}" REPO=front-end;
+  - DOCKER_USER=ervikrant06+frontendtest
+  - DOCKER_PASS=11WQ7CFG95XWOZTAKWIZ4IZZFLALEIN9P8T39JYS2OD8DK2BLA7J6RCYYQD4Y9GJ
 
 script:
   - make test
